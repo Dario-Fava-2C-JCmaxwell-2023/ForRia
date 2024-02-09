@@ -60,11 +60,17 @@
     <div id="Gif"></div>
     
 
-    <button id="yes" onclick="">Yess</button>
+    <button id="yes" onclick="openNewTab()">Yess</button>
     <button id="no" onclick="aumentaDimensione()">No.</button>
 
 
     <script>
+
+    function openNewTab() {
+            
+            const urlDaAprire = "https://dario-fava-2c-jcmaxwell-2023.github.io/ForRia/forRia2%3C3.html";
+            window.open(urlDaAprire, "_blank");
+    }
 
     function aumentaDimensione() {
         var button = document.getElementById('yes');
