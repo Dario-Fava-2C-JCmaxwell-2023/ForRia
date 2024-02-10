@@ -15,12 +15,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column; /* Modifica per organizzare il contenuto verticalmente */
         }
 
         .buttons-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap; /* Permette agli elementi di andare a capo se non c'è abbastanza spazio */
         }
 
         h1 {
@@ -28,9 +30,10 @@
             font-family: 'Dancing Script', cursive;
             font-size: 70px;
             text-align: center;
-            position: absolute;
-            top: 10%;
-            width: 100%;
+            margin: 20px 0; /* Aggiunge un margine per evitare che il testo tocchi i bottoni */
+            width: 90%; /* Riduce la larghezza per mantenere il testo leggibile su schermi piccoli */
+            position: relative; /* Modificato per evitare sovrapposizioni assolute */
+            top: 0; /* Reset della posizione */
         }
 
         #yes, #no {
@@ -64,6 +67,22 @@
 
         #yes:hover, #no:hover {
             transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px; /* Riduce la dimensione del titolo per schermi piccoli */
+            }
+
+            #yes, #no {
+                width: 150px; /* Riduce la dimensione dei bottoni */
+                height: 150px;
+            }
+
+            .buttons-container {
+                flex-direction: row; /* Mantiene i bottoni in fila su schermi piccoli */
+                flex-wrap: wrap; /* Permette ai bottoni di andare a capo se necessario */
+            }
         }
     </style>
 
