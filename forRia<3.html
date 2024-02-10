@@ -4,87 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Ria ❤ </title>
-
     <style>
-
-
         h1{
-            
-      
-            
             color: red;
             font-family: Dancing Script;
             font-size: 70px;
-            
         }
         
-        #yes{
+        #yes, #no{
             border-radius: 20%;
             width: 400px;
             height: 220px;
-            background-color: green;
             transition: width 0.3s, height 0.3s, background-size 0.3s;
-            bottom: 400px;
-            right: 800px;
-            top: 450px;
-            left: 800px;
-            
+            position: relative; 
+            margin: 20px auto; 
+        }
+
+        
+        #yes{
+            background-color: green;
             background-image: url('spider_kitty.jpeg');
-            background-repeat: no-repeat;           /*immagine bottone*/
+            background-repeat: no-repeat;
             background-position: center center;
             background-size: 400px 220px;
         }
 
+        
         #no{
-            border-radius: 20%;
-            width: 400px;
-            height: 220px;
             background-color: red;
-            bottom: 200px;
-            right: 800px;
-            top: 450px;
-            
             background-image: url('sad_hellokitty.png');
-            background-repeat: no-repeat;           /*immagine bottone*/
+            background-repeat: no-repeat;
             background-position: center center;
             background-size: 300px 230px;
         }
+
+        
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px; 
+            }
+            #yes, #no {
+                width: 80%; 
+                height: auto; 
+                background-size: contain; 
+            }
+        }
+    
     </style>
-
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
+    
+    
     <h1>Do you wanna be my valentine?</h1>
-
+    
+    
     <div id="Gif"></div>
     
-
-    <button id="yes" onclick="openNewTab()">Yess</button>
+    
+    <button id="yes" onclick=" window.open('https://dario-fava-2c-jcmaxwell-2023.github.io/ForRia/forRia2%3C3.html') ">Yess</button>
+    
+    
     <button id="no" onclick="aumentaDimensione()">No.</button>
-
-
+    
+    
     <script>
-
-    function openNewTab() {
-            
-            const urlDaAprire = "https://dario-fava-2c-jcmaxwell-2023.github.io/ForRia/forRia2%3C3.html";
-            window.open(urlDaAprire, "_blank");
-    }
-
     function aumentaDimensione() {
         var button = document.getElementById('yes');
         
-
         var larghezzaAttuale = yes.offsetWidth;
         var altezzaAttuale = yes.offsetHeight;
         
         var nuovaLarghezza = larghezzaAttuale + 100;
         var nuovaAltezza = altezzaAttuale + 50;
-
+        
         button.style.width = (larghezzaAttuale + 100) + 'px';
         button.style.height = (altezzaAttuale + 50) + 'px'; 
-        button.style.backgroundSize = nuovaLarghezza + 'px ' + nuovaAltezza + 'px';
+       
+       button.style.backgroundSize = nuovaLarghezza + 'px ' + nuovaAltezza + 'px';
     }
     </script>
 </body>
