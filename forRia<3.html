@@ -16,6 +16,24 @@
             align-items: center;
             height: 100vh;
             flex-direction: column; /* Modifica per organizzare il contenuto verticalmente */
+            position: relative; /* Permette il posizionamento degli pseudoelementi */
+        }
+
+        body::before, body::after {
+            content: '❤';
+            position: absolute;
+            font-size: 2rem;
+            color: #ff4081;
+        }
+
+        body::before {
+            top: 10px;
+            left: 10px;
+        }
+
+        body::after {
+            bottom: 10px;
+            right: 10px;
         }
 
         .buttons-container {
