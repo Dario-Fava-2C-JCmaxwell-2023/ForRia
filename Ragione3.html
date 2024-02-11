@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragione 1</title>
-
+    <title>Ragione 2</title>
 
     <style>
         img{
@@ -13,10 +12,14 @@
         }
         
         #freccia{
-            height: 100x;
+            height: 100px;
             width: 150px;
+            transition: transform 0.5s ease;
         }
         
+        #freccia:hover {
+            transform: scale(1.1); 
+        }
         
         h3{
             color: red;
@@ -28,16 +31,15 @@
             font-size: 50px;
         }
 
-    
         @media (max-width: 768px) {
-    img {
-        width: 80%;
-    }
+            img {
+                width: 80%;
+            }
 
-    h1 {
-        font-size: 30px;
-    }
-    }
+            h1 {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -48,7 +50,7 @@
     <h3>---------------------------------------</h3>
  
     <a href="https://dario-fava-2c-jcmaxwell-2023.github.io/ForRia/Ragione4.html" target="_self"> 
-        <img id="freccia" src="freccia-removebg-preview.png" alt="freccetta"/> 
+        <img id="freccia" src="freccia-removebg-preview.png" alt="freccetta"/> <!-- Assicurati che l'ID "freccia" sia presente -->
     </a>
 </body>
 </html>
