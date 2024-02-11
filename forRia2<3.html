@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>If you say yes...</title>
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%; /* Assicura che il contenitore si estenda per tutta la larghezza */
+            height: 100vh; /* Opzionale, per estendere l'altezza */
+}
+        
         body {
             text-align: center;
             margin: 0;
@@ -72,8 +81,13 @@
     </style>
 </head>
 <body>
-    <!-- Immagine di una lettera chiusa da cliccare per aprire la lettera -->
-    <img id="openLetterImage" src="valentine-love-letter-3d-render-element-free-png-removebg-preview.png" alt="Apri la Lettera" onclick="openLetter()">
+    
+    
+    <div class="container">
+        <img id="openLetterImage" src="valentine-love-letter-3d-render-element-free-png-removebg-preview.png" alt="Apri la Lettera" onclick="openLetter()">
+    </div>
+    
+    
     <div class="content" id="letterContent">
         <img src="download.gif" alt="ForRia ❤">
         <h3>----------------------------------------------------------------------------------------------------</h3>
@@ -103,4 +117,3 @@
     </script>
 </body>
 </html>
-potresti rendere questo codice visibile da telefono senza cambiare nulla e senza abbreviazioni
