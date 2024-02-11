@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragione 1</title>
 
-
     <style>
-        
         #freccia{
-            height: 100x;
+            height: 100px;
             width: 150px;
+            transition: transform 0.5s ease;
         }
         
-        
+        #freccia:hover {
+            transform: scale(1.1);
+        }
+
         h3{
             color: red;
         }
@@ -29,16 +31,15 @@
             font-size: 50px;
         }
 
+        @media (max-width: 768px) {
+            img {
+                width: 80%;
+            }
 
-    @media (max-width: 768px) {
-    img {
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-    }
+            h1 {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
