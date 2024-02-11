@@ -3,65 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If you say yes...</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%; /* Assicura che il contenitore si estenda per tutta la larghezza */
-            height: 100vh; /* Opzionale, per estendere l'altezza */
-}
-        
+    <title>If you say yess...</title>
+    <style>     
         body {
-            text-align: center;
+            text-align: center; 
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .content {
-            width: 80%;
-            max-width: 600px;
-            margin: 20px;
-            opacity: 0; /* Inizialmente nascosto */
-            transform: scale(0); /* Inizialmente ridotto a 0 */
-            transition: all 2s ease; /* Animazione */
-        }
-
-        .content.open {
-            opacity: 1; /* Rendi visibile */
-            transform: scale(1); /* Ritorna alle dimensioni originali */
+            flex-direction: column; 
+            align-items: center; 
         }
 
         img {
-            width: 50%;
-            max-width: 300px;
-            margin-top: 20px;
-        }
-
-        #openLetterImage {
-            cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
-            max-width: 400px; /* Dimensione maggiorata dell'immagine della lettera da cliccare */
-            margin-bottom: 20px; /* Spazio dall'immagine al contenuto */
-        }
-
-        h1, h2 {
-            font-family: 'Dancing Script';
+            width: 50%; 
+            max-width: 300px; 
+            margin-top: 20px; 
         }
 
         h1 {
             color: rgb(0, 0, 0);
+            font-family: 'Dancing Script';
             font-size: 50px;
         }
 
         h2 {
             color: red;
+            font-family: 'Dancing Script';
             font-size: 90px;
         }
 
@@ -80,40 +47,25 @@
         }
     </style>
 </head>
-<body>
-    
-    
-    <div class="container">
-        <img id="openLetterImage" src="valentine-love-letter-3d-render-element-free-png-removebg-preview.png" alt="Apri la Lettera" onclick="openLetter()">
-    </div>
-    
-    
-    <div class="content" id="letterContent">
-        <img src="download.gif" alt="ForRia ❤">
-        <h3>----------------------------------------------------------------------------------------------------</h3>
-        <h1>
-            Sono veramente felice di aver trovato una persona come te ❤ <br>
-            <br>
-            Sinceramente non so neanche quanto io possa piacerti o se potrai <br>
-            mai vedermi nello stesso modo in cui ti vedo te <br>
-            ma questi sicuramente non saranno fatti miei. <br>
-            Sono solamente qui per dirti che sei <br>
-            una persona veramente fantastica <br>
-            che si merita il meglio nella vita e dagli altri.<br>
-            So di non conoscerti ancora al meglio<br>
-            e non posso avere ancora tutte le idee chiare <br>
-            infatti prima di incontrarci è questo il mio unico obbiettivo.<br>
-        </h1>
-        <h3>----------------------------------------------------------------------------------------------------</h3>
-        <h2>❤</h2>
-        <img src="perlalettera.jpg" alt="ForRia2 ❤">
-    </div>
+<body>  
+    <img src="download.gif" alt="ForRia ❤">  
+    <h3>----------------------------------------------------------------------------------------------------</h3> 
+    <h1>
+        Sono veramente felice di aver trovato una persona come te ❤ <br>
+        <br> 
+        Sinceramente non so neanche quanto io possa piacerti o se potrai <br> 
+        mai vedermi nello stesso modo in cui ti vedo te <br> 
+        ma questi sicuramente non saranno fatti miei. <br>
+        Sono solamente qui per dirti che sei <br>
+        una persona veramente fantastica <br> 
+        che si merita il meglio nella vita e dagli altri.<br>
+        So di non conoscerti ancora al meglio<br> 
+        e non posso avere ancora tutte le idee chiare <br>
+        infatti prima di incontrarci è questo il mio unico obbiettivo.<br>
+    </h1>  
+    <h3>----------------------------------------------------------------------------------------------------</h3>  
+    <h2>❤</h2>
 
-    <script>
-        function openLetter() {
-            document.getElementById('letterContent').classList.add('open');
-            document.getElementById('openLetterImage').style.display = 'none'; // Nasconde l'immagine della lettera chiusa dopo il click
-        }
-    </script>
+    <img src="perlalettera.jpg" alt="ForRia2 ❤">  
 </body>
 </html>
