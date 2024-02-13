@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>At this point i dont know</title>
-
     <style>
-        @media (max-width: 768px) {
-            
-            h2{
-                text-align: center;
-            }
-            
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column; 
+        }
+        h2 {   
+            width: auto; 
+            line-height: 1.6;
+            margin: auto; 
+            max-width: 90%; 
+        }
+
+        
+        @media (max-width: 600px) {
             h2 {
-                font-size: 30px;
+                font-size: 18px; 
+            }
+            body {
+                padding: 10px; 
             }
         }
     </style>
